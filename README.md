@@ -2,6 +2,7 @@
 
 This is a simple responsive website built using HTML and CSS. The design adjusts seamlessly across different screen sizes, ensuring a great user experience on desktops, tablets, and mobile devices. 
 
+Live demo: [Responsive Website](https://prem-poudel.github.io/responsive-site/)
 
 ## Features
 - Fully responsive design
