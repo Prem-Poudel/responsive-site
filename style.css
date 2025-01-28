@@ -1,0 +1,398 @@
+
+
+
+*{
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+.main{
+    width: 100%;
+    min-height: 100vh;
+}
+
+#top{
+    width: 100%;
+    min-height: 55vh;
+    background-image: url(images/top_bg.jpg);
+    background-size: cover;
+    background-position: center;  
+
+}
+
+
+
+
+#over-lay{
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: relative;
+}
+
+#text{
+    position: absolute;
+    width: 100%;
+    bottom: 15vh;
+    padding: 0px 10vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+#text h1{
+    font-weight:500;
+    font-size: 3vw;
+}
+
+#text-right{
+    display: flex;
+    align-items: center;
+    width: 70%;
+    justify-content: space-between;
+}
+
+#text-right p{
+    width: 40%;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.2;
+}
+
+#icons{
+    display: flex;
+    gap: 1vw;
+}
+
+#icons i{
+    font-size: 1.5vw;
+    cursor: pointer;
+}
+
+#bottom{
+    width: 100%;
+    min-height: 45vh;
+    display: flex;
+}
+
+
+#btm_1{
+    width: 25%;
+    min-height: inherit;
+    background-color: white;
+    padding: 3vw;
+}
+
+
+#btm_1 h3{
+    font-weight: 500;
+    font-size: 2vw;
+    color: black;
+}
+
+#btm_1 p{
+    color: black;
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1vw;
+}
+
+
+#btm_2{
+    width: 25%;
+    min-height: inherit;
+    background-image: url(images/juho-luomala-K2AWz4lXrAM-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.btm_2_inner{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: inherit;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.btm_2_inner h3{
+    font-weight: 500;
+    font-size: 2vw; 
+}
+
+#btm_3{
+    width: 20%;
+    min-height: inherit;
+
+}
+
+
+#btn_3_top{
+    width: 100%;
+    min-height: calc(45vh/2);
+    background-color: orangered;
+    padding: 1vw;
+}
+
+#btn_3_top h4{
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+#btn_3_top p{
+    font-size: 1vw;
+    font-weight: 400;
+    line-height: 1.2;
+    margin-top: 1vw;
+}
+
+#btn_3_btm{
+    width: 100%;
+    min-height: calc(45vh/2);
+    background-image: url(images/cristofer-maximilian-uQDRDqpYJHI-unsplash.jpg);
+    background-size: cover;
+    background-position: center;
+   
+}
+
+#btm_4{
+    width: 30%;
+    min-height: inherit;
+   background-color: #444;
+   padding: 3vw;
+}
+
+#btm_4 h3{
+    font-weight: 500;
+    font-size: 2vw;
+}
+
+#btm_4 .review{
+    display: flex;
+    margin-top: 2vw;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#btm_4 .photo{
+    width: 80px;
+    height: 80px;
+    background-color: white;
+    border-radius: 50%;
+    background-image: url(images/profile.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#btm_4 .review p{
+    width: 80%;
+    font-size: 0.9vw;
+    font-weight: 400;
+}
+
+
+
+/* Responsive Setting */
+
+/* for small devices */
+@media (max-width: 575.98px) {
+
+    #top{
+        min-height: 40vh;
+    }
+
+    
+   
+    #over-lay #text{
+        flex-direction: column;
+        align-items: flex-start;
+        bottom: 10vh;
+    
+    }
+
+    #over-lay #text #text-right{
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 4vw;
+    }
+
+    #over-lay #text #text-right p{
+        width: initial;
+        font-size: 1vh;
+    }
+
+    #over-lay #text h1{
+        font-size: 4vh;
+    }
+
+    #over-lay #text #icons{
+        column-gap: 20px;
+    }
+
+    #over-lay #text #icons i{
+        font-size: 1.4vh;
+    }
+
+    #bottom{
+        min-height: 20vh;
+        flex-direction: column;
+        gap: 0;
+    }
+
+    #btm_1{
+        width: 100%;
+        min-height: 8vh;
+        padding: 2vh;
+    }
+
+    #btm_1 h3{
+        font-size: 3vh;
+    }
+
+    #btm_1 p{
+        font-size: 1.4vh;
+    }
+
+    #btm_2{
+        width: 100%;
+    }  
+    
+    .btm_2_inner h3{
+        font-size: 3vh;
+    }
+
+    #btm_3{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #btn_3_top{
+        min-height: 8vh;
+        padding: 2vh;
+    }
+
+    #btn_3_top h4{
+        font-size: 3vh;
+    }
+
+    #btn_3_top p{
+        font-size: 1.4vh;
+    }
+
+    #btm_4{
+        width: 100%;
+    }
+
+    #btm_4 h3{
+        font-size: 3vh;
+    }
+
+    #btm_4 .review p{
+        font-size: 1.4vh;
+    }
+    #btm_4 .photo{
+        width: 50px;
+        height: 50px;
+    }
+
+}
+
+/* for medium devices */
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+    
+
+    #over-lay #text{
+        bottom: 5vh;
+    }
+
+    #over-lay #text #text-right{
+        column-gap: 20px;
+    }
+
+    #over-lay #text #text-right p{
+        width: 40%;
+        font-size: 2.5vh;
+    }
+
+    #over-lay #text h1{
+        font-size: 6vh;
+    }
+    
+    #over-lay #text #icons{
+        column-gap: 10px;
+        align-items: center;
+    }
+    #over-lay #text #icons i{
+        font-size: 3.vh;
+    }
+   
+    #btm_1{
+        width: 100%;
+        min-height: inherit;
+        padding: 2vh;
+    }
+
+    #btm_1 h3{
+        font-size: 4vh;
+    }       
+
+    #btm_1 p{
+        font-size: 2vh;
+    }
+
+    #btm_2{
+        width: 100%;
+    }  
+    
+    .btm_2_inner h3{
+        font-size: 4vh;
+    }
+
+    #btm_3{
+        width: 100%;
+        flex-direction: column;
+    }
+
+    #btn_3_top{
+       
+        padding: 2vh;
+    }
+
+    #btn_3_top h4{
+        font-size: 4vh;
+    }       
+
+    #btn_3_top p{
+        font-size: 2vh;
+    }
+
+    #btm_4{
+        width: 100%;
+    }
+
+    #btm_4 h3{
+        font-size: 4vh;
+    }
+
+    #btm_4 .photo{
+        width: 30px;
+        height: 30px;
+    }
+    #btm_4 .review {
+        column-gap: 10px;
+    }
+    #btm_4 .review p{
+        font-size: 2vh;
+    }   
+    
+   
+
+}
